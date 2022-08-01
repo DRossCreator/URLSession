@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EDFED59284A51E2008387B2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDFED58284A51E2008387B2 /* Date.swift */; };
 		8F7518E627549D62001F05F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7518E527549D62001F05F2 /* AppDelegate.swift */; };
 		8F7518E827549D62001F05F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7518E727549D62001F05F2 /* SceneDelegate.swift */; };
 		8F7518EA27549D62001F05F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7518E927549D62001F05F2 /* ViewController.swift */; };
 		8F7518ED27549D62001F05F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7518EB27549D62001F05F2 /* Main.storyboard */; };
 		8F7518EF27549D65001F05F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7518EE27549D65001F05F2 /* Assets.xcassets */; };
 		8F7518F227549D65001F05F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7518F027549D65001F05F2 /* LaunchScreen.storyboard */; };
-		8FE4B91827549FD1005B617D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B91727549FD1005B617D /* Model.swift */; };
 		8FE4B91A2754A009005B617D /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B9192754A009005B617D /* AppSettings.swift */; };
 		8FE4B91C2754A059005B617D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B91B2754A059005B617D /* Endpoint.swift */; };
 		8FE4B91E2754A080005B617D /* RESTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B91D2754A080005B617D /* RESTClient.swift */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EDFED58284A51E2008387B2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		8F7518E227549D62001F05F2 /* URLSessionStartProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLSessionStartProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7518E527549D62001F05F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7518E727549D62001F05F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		8F7518EE27549D65001F05F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F7518F127549D65001F05F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F7518F327549D65001F05F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FE4B91727549FD1005B617D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8FE4B9192754A009005B617D /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		8FE4B91B2754A059005B617D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		8FE4B91D2754A080005B617D /* RESTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTClient.swift; sourceTree = "<group>"; };
@@ -51,6 +51,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EDFED5A284A528B008387B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7EDFED60284A53CC008387B2 /* URLSettings */,
+				7EDFED5C284A52CF008387B2 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7EDFED5B284A5299008387B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F7518EB27549D62001F05F2 /* Main.storyboard */,
+				8F7518F327549D65001F05F2 /* Info.plist */,
+				8F7518F027549D65001F05F2 /* LaunchScreen.storyboard */,
+				8F7518EE27549D65001F05F2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7EDFED5C284A52CF008387B2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7EDFED5D284A52E7008387B2 /* Extensions */,
+				7EDFED5E284A5317008387B2 /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7EDFED5D284A52E7008387B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EDFED58284A51E2008387B2 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7EDFED5E284A5317008387B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F7518E927549D62001F05F2 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7EDFED5F284A5339008387B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8F7518E727549D62001F05F2 /* SceneDelegate.swift */,
+				8F7518E527549D62001F05F2 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7EDFED60284A53CC008387B2 /* URLSettings */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4B9192754A009005B617D /* AppSettings.swift */,
+				8FE4B91B2754A059005B617D /* Endpoint.swift */,
+				8FE4B91D2754A080005B617D /* RESTClient.swift */,
+				8FE4B91F2754A0A8005B617D /* EndpointClient.swift */,
+				8FE4B9212754A0EF005B617D /* EndpointClientError.swift */,
+				8FE4B9232754A118005B617D /* ServerError.swift */,
+			);
+			path = URLSettings;
+			sourceTree = "<group>";
+		};
 		8F7518D927549D62001F05F2 = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +137,9 @@
 		8F7518E427549D62001F05F2 /* URLSessionStartProject */ = {
 			isa = PBXGroup;
 			children = (
-				8F7518E527549D62001F05F2 /* AppDelegate.swift */,
-				8F7518E727549D62001F05F2 /* SceneDelegate.swift */,
-				8F7518E927549D62001F05F2 /* ViewController.swift */,
-				8F7518EB27549D62001F05F2 /* Main.storyboard */,
-				8FE4B91727549FD1005B617D /* Model.swift */,
-				8FE4B9192754A009005B617D /* AppSettings.swift */,
-				8FE4B91B2754A059005B617D /* Endpoint.swift */,
-				8FE4B91D2754A080005B617D /* RESTClient.swift */,
-				8FE4B91F2754A0A8005B617D /* EndpointClient.swift */,
-				8FE4B9212754A0EF005B617D /* EndpointClientError.swift */,
-				8FE4B9232754A118005B617D /* ServerError.swift */,
-				8F7518EE27549D65001F05F2 /* Assets.xcassets */,
-				8F7518F027549D65001F05F2 /* LaunchScreen.storyboard */,
-				8F7518F327549D65001F05F2 /* Info.plist */,
+				7EDFED5B284A5299008387B2 /* Resources */,
+				7EDFED5A284A528B008387B2 /* Sources */,
+				7EDFED5F284A5339008387B2 /* App */,
 			);
 			path = URLSessionStartProject;
 			sourceTree = "<group>";
@@ -164,10 +220,10 @@
 				8FE4B91E2754A080005B617D /* RESTClient.swift in Sources */,
 				8FE4B9222754A0EF005B617D /* EndpointClientError.swift in Sources */,
 				8F7518E827549D62001F05F2 /* SceneDelegate.swift in Sources */,
+				7EDFED59284A51E2008387B2 /* Date.swift in Sources */,
 				8FE4B9242754A118005B617D /* ServerError.swift in Sources */,
 				8FE4B91A2754A009005B617D /* AppSettings.swift in Sources */,
 				8FE4B91C2754A059005B617D /* Endpoint.swift in Sources */,
-				8FE4B91827549FD1005B617D /* Model.swift in Sources */,
 				8FE4B9202754A0A8005B617D /* EndpointClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH4VV96A9U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = URLSessionStartProject/Info.plist;
+				INFOPLIST_FILE = URLSessionStartProject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +403,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH4VV96A9U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = URLSessionStartProject/Info.plist;
+				INFOPLIST_FILE = URLSessionStartProject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
